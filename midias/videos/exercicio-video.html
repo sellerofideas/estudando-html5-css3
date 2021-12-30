@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <title>Videos</title>
+</head>
+<body>
+    <h1>Trabalhando com videos.</h1>
+    <h2>Hospedagem no proprio site</h2>
+    <ol>
+       <li><h2>Dica</h2></li>
+       <p>Para baixar videos gratuitos para usar em campanhas use o site <a href="https://www.pexels.com/pt-br/videos/" target="_blank" rel="external">pexels videos</a>. Tenha também o video vários formatos.</p>
+       <p>Os formatos mais compativeis para sites são:</p>
+        <ul>
+             <li>.MP4</li>
+             <li>.M4V</li>
+             <li>.WEBM</li>
+             <li>.OGV</li>
+        </ul>
+        <li><h2>Dica</h2></li>
+        <p>Baixe o programa HandBrake no site <a href="https://handbrake.fr/" target="_blank" rel="external">handebrake.fr</a> para converter videos. </p>
+    </ol>
+    <h1>Video hospedado no proprio servidor.</h1>
+    <p>Para hospedar um video no proprio site use a tag&lt;video src="pexels-polina-tankilevitch-8609000.mp4" width="200" controls >&lt;/video>.</p>
+    <video width="200" poster="../imagens/p.png" controls >
+        <source src="../videos/pexels-polina-tankilevitch-8609000.mp4" type="video/mp4">
+        <source src="../videos/pexels-polina-tankilevitch-8609000.m4v" type="video/mp4">
+        <source src="../videos/pexels-polina-tankilevitch-8609000.webm" type="video/ogg">
+        <p>Seu navegador não é compativel com o formato do video.</p>
+    </video>
+    <p>É recomendado colocar uma opção para o usuario baixar, se for isse o caso, caso o navegador não aceite os formatos disponíveis.</p>
+    <h2>Hospedando em servidores externos</h2>
+    <p>Outra forma de hospedar videos no site é através de servidores externos, nesse caso os mais recomendados são:</p>
+    <ul>
+        <li><h3> YouTube</h3></li>
+        A vantagem do youtube é que ele não tem limite de videos e de acessos. A desvantagem é que qualquer pessoa pode ter acesso ao video e copiá-lo.
+        <p></p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xx01-s_Q-mU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li><h3>Vimeo</h3></li>
+        No Vimeo você tem mais segurança, pois existe a opção de impedir o acesso, além da qualidade gráfica, mas é limitado na quantidade de acessos e dados que você pode fazer de upload. <p></p>
+        <iframe src="https://player.vimeo.com/video/71361854?h=b2108012ad" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+        <p>Para hospedar um video externo basta copiar o códio HTML do vídeo e colá-lo no site.</p>                
+    </ul>
+</body>
+</html>

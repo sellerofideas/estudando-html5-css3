@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <title>Fontes</title>
+</head>
+<body>
+    <header id="principal">
+        <h1>APRENDENDO HTML & CSS</h1>
+        <h2>Curso em vídeos</h2>
+    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../acessando-cores/cores-em-css.html">Cores</a>
+        <a href="../gradientes/gradiente.html">Gradiente</a>
+        <a href="../tipografia/fontes-em-css.html">Tipografia</a>
+        <a href="../box/box.html">Box</a>        
+        <a href="../estilos/estilo.html">Estilo</a>        
+        <a href="../Identificadores-e-classes/identificadores-e-classes.html">Indentificadores e classes</a>        
+    </nav> 
+    <main>
+        <h1>Fontes em CSS</h1>
+        <h2>Tamanho das fontes</h2>
+        <p>Para configurar o tamaho das fontes em CSS é usada a tag "font-size:". Existem dois tipos de tamanhos de fontes:
+            <ol>
+                <li><h3>Medodas Absolutas</h3></li> Cm (centímetro), mm (milímetro), in (polegada), px (pixel), pt (ponto), pc (paica).
+                <li><h3>Medidas Relativas.</h3></li> "Em" (Medida relativa ao tamanho da letra M maiúsculo da fonte), "ex" (Relativa ao tamanho da letra x da fonte), "rem" (Relativa a fonte configurada no body), "vw" (Relativa ao percentual da largura largura da View Port ou tamanho da tela),  "vh" (relativo ao percentual da altura da view port), % (Porcentagem relativa).
+                <p>Os mais utilizados para o tamanho da fonte são o "em" e o "px". <br> Normalmente 16px é o mesmo tamanho que 1em.
+                É sempre recomendado usar em para se adequar melhor ao tamanho das telas desde um relógio até uma TV.</p>
+            </ol>
+        </p>
+        <h2>Peso das fontes.</h2>
+        <p>Para configurar o peso usamos o comando "font-weight:". Os tipos de pesos são:</p>
+        <ul>
+            <li style="font-weight: lighter;" >Lighter</li>
+            <li style="font-weight: normal;">Normal</li>
+            <li style="font-weight: bold;">Negrito (bold)</li>
+            <li style="font-weight: bolder;">Extra-bold</li>
+            <li>Numerica de 100 á 900.</li>
+        </ul>
+        <h2>Estilo das fontes</h2>
+        <p>Para usar estilo nas fontes configuramos usando "font-style:", assim podemos acessar as configurações:
+            <ul>
+                <li style="font-style: italic;">Italico</li>
+                <li style="font-style: oblique;">Oblíquo</li>
+            </ul>
+            <p>Para simplificar os comandos existe uma configuração chamada "shorthand" que une várias configurações em uma unica linha deixando o codigo mais enxuto, a sequência que deve ser aplicada é font-style, font-wegth, font-size, font-famyli.</p>
+            <ul>
+                O código fica:
+                <li>font: itálic bolder 3em 'work sans', sans-serif</li>
+            </ul>
+        </p>
+        <h2>Topos de fontes.</h2>
+        <h2>Famílias de fontes.</h2>
+        <h2>Categoria das fontes.</h2>
+        <h2>Capturando fontes usadas em um site</h2>
+        <p>Para capturar detalhes de fontes usadas nos sites você precisa instalar uma extenção do fontes ninja do <a href="https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh?hl=pt-BR" target="_blank" rel="noopener noreferrer">Chrome app store.</a> </p>
+        <h2>Formas de implementar fontes:</h2>
+        
+        Para buscar outros tipos de fontes direto do google fontes.
+        <p><a href="https://fonts.google.com/" target="_blank" rel="external">Google Fonts.</a></p>
+        <p>Para implementar a font do Google fontes é preciso escolher a fonte desejada, copiar o codigo CSS e implementar na "head", na tag "style" ou no arquivo CSS com as configurações desejadas.</p>
+        <hr>
+        Fontes do site Dafont.
+        <p><a href="https://www.dafont.com/pt/" target="_blank" rel="external">Dafont.com.</a></p>
+        Nesse caso você precisa baixar o arquivo zip, descompactar e copiar o arquivo otf e ttf.
+        <h4>Tipos de format()</h4>
+        <ul>
+            <li>Opentype(otf)</li>
+            <li>Truetupe(ttf)</li>
+            <li>Embedded- opentupe</li>
+            <li>Truetype-att (Apple Advanced Typography)</li>
+            <li>Svg</li>
+        </ul>
+        <p>Para configurar a fonte nesse caso utilize no campo da head a tag "style" e a regra "@font-face" depois é só configurar a "font-famyli:" com o nome da fonte. </p>
+        
+        
+        <hr>
+        Para verificar as possibilidades de fontes para CSS.
+        <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank" rel="externals">CSS Web Safe Combinations.</a></p>
+        <p>Para identificar fontes dentro de imagens:
+            <ul>
+                <li><a href="https://www.whatfontis.com/" target="_blank" rel="noopener noreferrer">What fontis.</a></li>
+                <li><a href="https://www.fontsquirrel.com/" target="_blank" rel="noopener noreferrer">Font Squirrel.</a></li>
+                <li><a href="https://www.myfonts.com/" target="_blank" rel="noopener noreferrer">MyFonts</a></li>
+            </ul>
+        </p>
+        <hr>
+        <h1>Alinhamentos.</h1>
+        <p>Para alinhar conteúdos em CSS usamos na tag head ou em uma folha de estilo separada as configurações de "text-", "text-align:", "text-indent" etc.</p>
+    </main>
+    <footer>
+        <p> Desenvolvido por O vendedor de ideias</p>
+    </footer>
+</body>
+</html>

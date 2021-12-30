@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode usar o meu <a href="https://github.com/sellerofideas" target="_blank" rel="external">repositório no github</a></p>
+    <p>Você também pode <a href="https://www.linkedin.com/in/treinamentodsp/" target="_blank" rel="external">acessar meu linkedin</a></p>    
+    <h1>Links internos</h1>
+    <p>Esta é a primeira pagina do meu site, se você quiser pode acessar também <a href="pag2.html" rel="next">segunda pagina.</a></p>
+    <p>Voçê também pode acessar nossa <a href="noticioas/pag3.html" rel="next" target="_self">pagina de notícias</a></p>
+    <p>Podemos usar um target para a pagina abrir na mesma aba quando a pagina for do mesmo site.</p>
+    <h1>Baixar arquivos</h1>
+    Para baixar arquivos, a principio, basta adicionar o arquivo desejado na pasta e usar a tag &lt;a href="Selicionar o endereço do arquivo aqui">Baixar livro em pdf &lt;/a&gt;
+
+    <h2>Links para dowload</h2>
+    <ul>
+        <li><a href="livro/100 títulos.pdf">Baixar livro em pdf</a></li>
+    </ul>
+    <p>Para baixar o arquivo direto basta adicionar a tag &lt;a href="livro/100 títulos.pdf" download="livro/100 títulos.pdf" type="aplication/pdf">Baixar direto&lt;/a&gt;</p> <b>Esse comando não é aceito em todos os navegadores.</b>
+    <ul>
+        <li><a href="livro/100 títulos.pdf" download="livro/100 títulos.pdf" type="aplication/pdf">Baixar direto.</a></li> 
+    </ul>
+</body>
+</html>

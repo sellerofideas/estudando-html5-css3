@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <title>Identificadores, classes, pseudo-classes e pseudo-elementos.</title>
+</head>
+<body>
+    <header id="principal">
+        <h1>APRENDENDO HTML & CSS</h1>
+        <h2>Curso em vídeos</h2>
+    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../acessando-cores/cores-em-css.html">Cores</a>
+        <a href="../gradientes/gradiente.html">Gradiente</a>
+        <a href="../tipografia/fontes-em-css.html">Tipografia</a>
+        <a href="../box/box.html">Box</a>        
+        <a href="../estilos/estilo.html">Estilo</a>        
+        <a href="identificadores-e-classes.html">Indentificadores e classes</a>        
+    </nav>   
+    <main>
+        <h1 id="principal" class="class3">Identificadores classes, pseudo-classes e pseudo-elementos.</h1>
+        <h2>Identificadores (#)</h2>
+        <p>Quando queremos personalizar um elemento expecífico podemos criar um identificador dentro da tag usando "id=".</p>
+        <p>Uma vez que o elemento que será personalizado foi identificado, ex: "id=principal", chamamos o id, na folha de CSS ou na "head" usando "#", ex: "#principal".</p>
+        <p>Por vias de regra só podemos usar um id para cada pagina e ele sempre irá sobrepor uma classe ou configuração padrão.</p>
+        
+        <h2>Classes (.)</h2>
+        <p>Uma classe em CSS possui um conjunto de caracteristicas usadas por todos os elementos identificados por ela.</p>
+        <p>Se quisermos personalizar vários elementos podemos criar classes. Dentro da tag desejada, usamos o comando "class=" e damos um nome a classe.</p>
+        <p>Para configurar uma classe, na folha de CSS, chamamos o nome da classe usando um ponto, ex:".classe".</p>
+        <p>Podemos usar as configurações de classes para outros elementos dentro do conteúdo, <span class="class">basta enveloparmos o elemento desejado</span> com a tag &lt;span&gt;.</p>
+        <p class="class class2">Também podemos usar mais de uma classe dentro de uma mesma tag, ex: "cass="class class2".
+        </p>
+        <p>Podemos adicionar uma ou mais classes no "id", ex: "id="principal" class="class3".</p>
+        <h2>Pseudo-classes (:)</h2>
+        <p>Usamos a pseudo-classe para adicionar estados especiais dentro de de um elemento, ela é uma palavra-chave adicionada após ":" em folha de CSS, como por exemplo, ":houver" ou ":visited".</p>
+        
+        <h2>Pseudo-elemento (::)</h2>
+        <p>Um pseudo-elemento é usado quado queremos adicionar um elemento dentro de outro elemento usando CSS. Para adicionar um pseudo-elemento usamos "::", ex: "::after".</p>
+        <h2>Children ou filha(>)</h2>
+        <p>Uma filha é uma classe dentro de outra classe, com ela podemos configurar elementos dentro de outros.</p>
+        <aside><a href="../../Materiais/">Acesse os materiais em pdf.</a></aside>
+    </main>
+</body>
+</html>

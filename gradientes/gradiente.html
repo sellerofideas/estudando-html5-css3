@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">    
+    <link rel="stylesheet" href="../style.css">
+    <title>Gradientes em CSS</title>
+    <style>
+        /*   *{ Essa tag é usada para configurações globais da css.
+            height: 50%;
+        }*/
+        body { /* background:fundo, radial: tipo, ()configurações. Podemos adicionar mais cores e controlar a porcentagem de cores*/
+           background-image: radial-gradient(circle, rgb(253, 253, 253), blue 70%);
+           background-attachment: fixed;/*fixa o fundo*/
+        }
+        h2 {
+            color: rgb(3, 3, 3); font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body> 
+    <header id="principal">
+        <h1>APRENDENDO HTML & CSS</h1>
+        <h2 class="h2">Curso em vídeos</h2>
+    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../acessando-cores/cores-em-css.html">Cores</a>
+        <a href="../gradientes/gradiente.html">Gradiente</a>
+        <a href="../tipografia/fontes-em-css.html">Tipografia</a>
+        <a href="../tipografia/fontes-em-css.html">Fontes</a>
+        <a href="../box/box.html">Box</a>        
+        <a href="../estilos/estilo.html">Estilo</a>        
+        <a href="../Identificadores-e-classes/identificadores-e-classes.html">Indentificadores e classes</a>        
+    </nav> 
+    <main>
+        <h1>Testando gradientes</h1>
+        <ul>
+            <li><p>Para trabalhar com as cores de fundo podemos usar a técnica de CSS estilo local (Interno na própria página) usando a área da tag "head", ou criar um padrão usando a técnica de <a href="../estilos/estilo.html" target="_blank" rel="noopener noreferrer">CSS externa</a></p></li>
+        </ul>
+        <h2>Configurações.</h2>
+        <ul>
+            <li>Para configurar basta selecionar o tipo de configurações desejadas usando as sugestões que aparecem ao digitar o comando.</li>
+        
+        </ul>
+    </main>
+    <footer>
+        <p style="color: white;"> Desenvolvido por O vendedor de ideias</p>
+    </footer>
+</body>
+</html>

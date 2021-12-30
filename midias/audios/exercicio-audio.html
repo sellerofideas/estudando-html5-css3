@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <title>Trabalhando com audios</title>
+</head>
+<body>
+    <h1>Trabalhando com audios.</h1>
+    <p>Esxistem 2 formas de se trabalhar com audios:</p>
+    <ol> 
+        <li>Uma é usando a tag &lt;audio src="">&lt;/audio&gt;.</li>
+        <audio src="audios/Bay-Street-Billionaires-SquaddaB.mp3" controls autoplay>
+        </audio>
+        <li>A outra é usando a tag audio + tipe (&lt;audio> &lt;source src="" type="">&lt;/audio&gt;).</li>
+        <audio>
+            <source src="audios/Bay-Street-Billionaires-SquaddaB.mp3" type="audio/mpeg">
+            <source src="Bay-Street-Billionaires-SquaddaB.mp3" type="audio/mpeg" type="audio/ogg">
+            <source src="Bay-Street-Billionaires-SquaddaB.mp3" type="audio/mpeg" type="audio/wav">
+        </audio>
+        <p>Os formatos de audio mais compativeis são:</p>
+        <ol>
+            <ul>
+                <li>.MP3</li>
+                <li>.OGG</li>
+                <li>.WAV</li>
+            </ul>
+        </ol>
+    </ol>
+    <p>É recomendado também, caso nenhuma das auternativas funcionem, colocar a função para o usuario baixar o arquivo usando a tag &lt;a href="local-do-arquivo" type="audio/mpeg">Clique aqui para baixar a música.&lt;/a&gt;</p>
+    <a href="audios/Bay-Street-Billionaires-SquaddaB.mp3" type="audio/mpeg">Clique aqui para baixar a música.</a>
+</body>
+</html>
