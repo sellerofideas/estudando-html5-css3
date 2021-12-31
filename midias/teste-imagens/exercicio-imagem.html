@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../style.css">
-    <title>Pagina 3</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../style.css">
+    <title>ImagensL</title>
 </head>
 <body>
     <header id="principal">
@@ -24,15 +24,17 @@
             <a href="midias/exercicio-imagem.html">Midias</a>
         </nav>
     <main>
-        <h1>Terceira pagina</h1>
-        <p>Esta é a terceira pagina</p>
-        <p>Éssa pagina foi feita para mostrar como criar um link para um pasta dentro da outra.</p>
-        <p>Para voltar a primeira pagina, no caso de ela estar em uma pasta anterior, digite: "../" para abrir a opção.</p>
-        <p><a href="../index.html">Voltar para aprimeira pagina.</a></p>
-    </main> 
-    <footer>
+        <h1>Imagens em HTML para diversos formatos</h1>
+        <p>O objetivo desse exercício é abrir o site me diversos formatos.</p>
+        <p>Para isso é preciso usar a tag "picture" e dentro dela usar a tag "&lt;source media="(min-width: )" srcset="" type="image/"&gt; e organizadas do menor para o maior.</p>
+        <picture>
+            <source media="(max-width:750px )" srcset="imagens/p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+            <img src="imagens/g.png" alt="Imagem flexivel">
+        </picture>
+    </main>
+       <footer>
         <p>Desenvolvido por O Vendedor de Ideias.</p>
-        <div" class="bola"></div>
-    </footer>  
+    </footer>      
 </body>
 </html>

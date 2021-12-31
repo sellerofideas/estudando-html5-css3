@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <title>Trabalhar com textos</title>
+    <style>
+         mark {
+              background-color: goldenrod;
+         }
+    </style>
+</head>
+<body>
+    <header id="principal">
+        <h1>APRENDENDO HTML & CSS</h1>
+        <h2 class="margin-top">Curso em vídeos</h2>
+    </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="acessando-cores/cores-em-css.html" class="a">Cores</a>
+            <a href="gradientes/gradiente.html">Gradiente</a>
+            <a href="tipografia/fontes-em-css.html">Tipografia </a>
+            <a href="box/box.html">Box </a>
+            <a href="estilos/estilo.html">Estilo</a>
+            <a href="Identificadores-e-classes/identificadores-e-classes.html" >Indentificadores e classes</a>
+            <a href="midias/exercicio-imagem.html">Midias</a>
+        </nav>
+     <main>
+          <!--É importante ficar a tento ao site https://dev.w3.org/html5/pf-summary/obsolete.html para saber se uma tag está obsoleta, uma dica é quando a tag digitada fica em vermelho, isso indica que está caindo em desuso e será descartada ou subtituida por outra. Outra dica é que o HTML 5 é focado em marcação ou significado da marcação da pagina enquanto o CSS é focado do dsing da pagina.-->
+          <h1>Trabalhando com títulos</h1>
+              <h1>"h1" é o titulo nivel 1</h1>
+          <p> título é usado em manchetes, mas também pode ser em outras areas da pagina, basta digigar "h1" + ENTER.</p><br>
+          <h2>"h2" Título de 2° nível</h2>
+               <P>Para criar um parágrafo digite "p" + enter</P>
+               <p>"h2" é usado como um título dentro do outro. Digite "h2" + ENTER.</p>
+                    <h3>"h3" Título de nível 3</h3>
+               <p>É um título em terceiro nível</p>
+          <h3>Para gerar um bloco de texto autoatico</h3>
+               <p>Digite "lorem" + ENTER</p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ratione ducimus? Vitae reiciendis quibusdam eaque ut voluptate excepturi assumenda aperiam commodi iste odit nostrum voluptatibus, repellat, saepe minima dolore asperiores.
+          <h1>Formtação de texto</h1>
+          <h2>Principais formatações</h2>
+          <h3>Negrito / Destaque</h3>
+          <p>Existe uma forma não semantica e uma forma semantica para <b>destacar uma frase</b><br>
+          A forma não semantica é adicionando a tag &lt;b &gt; <b>antes e depois&lt;/b&gt;</b> da frase ou palavra que se quer destacar.</p>
+          <p>A forma semântica (com significado) de usar <strong>negrito</strong> é usando a tag <strong>&lt;strong&gt; entre a frase que se quer destacar &lt;strong&gt;.</strong>  </p>
+          <h3> <em>Itálico / Ênfase</em></h3>
+          <p>Existem também 2 formas de deixar o texto em <em>ítálico</em>, uma forma <i>não semântica</i> colocando <i>&lt;i&gt;o texto desejado &lt;i&gt;</i> entre a tag &lt;i&gt;.</p>
+          <p>A forma semântica é colocando <em>o texto entre a tag &lt;em&gt;.</em></p>
+          <h3>Texto marcado</h3>
+          <p>Podemos usar a tag &lt;mark&gt; para <mark> marcar um texto em HTML</mark>. </p>
+          <p>Ou então usar &lt;mark styles"background-colora: greenyellow;"&lt;/mark&gt;<mark style="background-color: greenyellow;"> para marcar com outras cores</mark> usando CSS. </p>
+          <p>Para mudar a cor de todas as tags &lt;mark&gt;, na área de configurações da pagina, dentro de &lt;head&gt; precisamos criar a tag: <br>
+                &lt;style&gt; mark { backgroud-color: goldenrod; } &lt;/style&gt; mudando a <mark>cor padrão do marcador</mark>.  </p>
+          <h3>Alterar o tamanho de texto</h3>
+          <p>Para aumentar o texto era usado em HTML a tag &lt;big&gt;<big>para aumentar</big>&lt;/big&gt; e &lt;small&gt;<small>para diminuir</small> &lt;/small&gt; a letra.</p>
+          <h3>Texto <del>deletado / riscado</del> e texto <ins>inserido / sublinhado</ins> </h3>
+          <p>Para <del>riscar</del> um texto pode-se usar a tag &lt;del&gt;.</p>
+          <p>Para <ins>sublinhar</ins> um texto usando a forma semântica, usa-se a tag &lt;ins&gt;, para usar a forma <u>não semântica</u> usa-se a tag &lt;u&gt;.</p>
+          <h3>Texto sobrescrito</h3>
+          <p>Para sobrescrever um texto como: "x<sup>20</sup>" usamos a tag &lt;sup&gt;.</p>
+          <h3>Texto Subscrito</h3>
+          <p>Para subscrever um numero como H<sub>2</sub>O, usamos a tag &lt;sub&gt;.</p>
+          <p> -Consulte o site: https://dev.w3.org/html5/pf-summary/obsolete.html para ver quais tags não estão mais em uso. </p>
+     </main>
+           <footer>
+        <p>Desenvolvido por O Vendedor de Ideias.</p>
+    </footer>  
+</body>
+</html>
