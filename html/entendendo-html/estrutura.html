@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style1.css/estilo.css">
+    <title>Estrutura html</title>
+</head>
+<body>
+    <header id="principal">
+        <h1>APRENDENDO HTML & CSS</h1>
+        <h2 class="margin-top">Curso em vídeos</h2>
+    </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="acessando-cores/cores-em-css.html" class="a">Cores</a>
+            <a href="gradientes/gradiente.html">Gradiente</a>
+            <a href="tipografia/fontes-em-css.html">Tipografia </a>
+            <a href="box/box.html">Box </a>
+            <a href="estilos/estilo.html">Estilo</a>
+            <a href="Identificadores-e-classes/identificadores-e-classes.html" >Indentificadores e classes</a>
+            <a href="midias/videos/exercicio-video.html">Midias</a>
+            <a href="links/links.html">Links</a>
+            <a href="textos/textos.html">Textos</a>
+            <a href="teste-icone/favicon.html">Fivecons</a>
+            <a href="tabela/tabelas.html">Tabelas</a>
+            <a href=""></a>
+            <a href="paragrafos/paragrafos.html">Paragrafos</a>
+            <a href="listas em html/listas.html">Listas</a>
+            <a href="formatacoes-comandos/formatacoes.html">Formatações</a>
+        </nav> 
+    <main>
+        <h1>Entendendo a estrutura básica das tags.</h1>
+        
+        <p>A estrututa básica de desenvolvimento em HTML é formada por tags, que significam "etiquetas".
+        <br>Uma tag tem o objetivo de marcar o conteúdo que será trabalhado posteriormente tanto com HTML, quanto com CSS.</p>
+        
+        <h2>O que tem dentro da tag?</h2>
+        <h3>Tags simples</h3>
+        <P>Uma tag é formada por <strong>abertura de tag</strong>, <strong>conteúdo</strong> e <strong>fechamento de tag</strong>.
+        Mas as tags que não possuem um conteúdo, como &lt;br&gt; e &lt;img&gt; não nescessitam de fechamento, formando uma tag simples.
+        </P>
+        
+        <img src="" alt="">[img 1 tag simples]</img>
+        <h3>Tags compostas</h3>
+        <p>Elas são formadas por <strong>abertura de tag</strong>, <strong>parâmetros</strong>, <strong>valores</strong>, <strong>conteúdo</strong> e <strong>fechamento de tag</strong> formando uma tag composta.</p>
+        
+        <img src="" alt="">[img 2 tag com parametros] </img>
+
+        <h2>Tags obsoletas.</h2>
+        <p>Algumas das tags já não estão mais em uso. Para saber qual tag não é mais usada acesse a <a href="https://html.spec.whatwg.org/multipage/">pagina oficial por aqui</a>. </p>
+
+        <p>Veja também nossa <a href="../../index.html">tabela de tags e suas funções</a> de uma forma bem didatica clicando aqui.</p>
+        
+        <h2>Entendendo a estrutura da HTML</h2>
+
+        <h3>Configurações da pagina em HTML.</h3>
+
+        <p>A primeira coisa a ser feita é configurar o documento html indicando qual o tipo de HTML e a linguagem em que o conteúdo será desenvolvido. 
+        <br> Para isso usamos as tags:            
+            <ol>
+                <li><dt><strong>&lt;!DOCTYPE html&gt;</strong></dt>
+                </li>
+                    <dd>Indica que a linguagem html é HTML 5.</dd>
+               
+                <li>
+                    <dt><strong>&lt;html lang="pt-br"&gt;</strong></dt>
+                </li>
+                    <dd>Indica em qual linguagem será o conteúdo. Isso ajuda o buscador a oferecer tradução ao usuario, caso seja nescessário.
+                    <br>Ela tambem precisa ser fechada no final da paginá após o body.
+                    </dd>
+        </p>
+        <p>Em seguida vem as configurações da pagina:
+                <li>
+                    <dt><strong>&lt;head&gt;</strong></dt>
+                </li>
+                        <dd>Indica o inicio da cabeça do site onde serão feitas as configurações da pagina.
+                        <br>Dentro do inicio e do fim da head é configurado o tipo de carctéres, o tamanho da tela, etc.
+                        </dd>
+               
+                <li>
+                    <dt><strong>&lt;meta charset="UTF-8"&gt;</strong></dt>
+                </li>
+                    <dd>Essa tag diciona suporte a linguagens com caractéres especiais, sem ela o conteúdo pode sofrer erros nos caractéres usados no conteúdo.</dd>
+               
+                    <li><dt><strong>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</strong></dt></li>
+                   <dd>????</dd>
+               
+                   <li><dt><strong>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</strong></dt></li>
+                <dd>Configura o tamanho padão da tela inicial.</dd>
+               
+                <li><dt><strong>&lt;title>Document&lt;/title&gt;</strong></dt></li> <dd>É o título da aba que aparecerá ao lado do fivcon.</dd>
+                
+                <li><dt><strong>&lt;/head&gt;</strong></dt></li><dd>Indica o fim da head.</dd>
+        </p>
+        <p>Em seguida temos a tag do corpo do documento e o fim da tag html.</p>
+                <li>
+                    <li>
+                        <dt><strong>&lt;body&gt;</strong></dt>
+                    </li>
+                    <dd>Abertura do corpo do documento onde será colocado todo conteúdo.</dd>
+                        
+                    <li>
+                        <dt><strong>&lt;/body&gt;</strong></dt>
+                    </li>
+                    <dd>Fechamento do corpo.</dd>
+
+                    <li>
+                        <dt><strong>&lt;/html&gt;</strong></dt>
+                    </li>
+                    <dd>Fechamento da pagina html.</dd>
+                </li>
+            </ol>
+        <p>Podemos configurar também dentro da "head" os links que acessam o fivcon e a folha de estilo. <a href="">Saiba mais sobre fivcon e folha de estilo aqui.</a></p>
+
+
+
+<link rel="stylesheet" href="../../css/style1.css/estilo.css">
+
+        </p>
+    </main>
+    <footer>
+        Desenvolvido por sellerofideas
+    </footer>
+
+</body>
+</html>
