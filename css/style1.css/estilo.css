@@ -17,6 +17,7 @@ header > h1 {
     font-size: 7vw;
 }
 .h2 {
+    background-image: none;
     color: white;
 }
 #principal {
@@ -59,6 +60,12 @@ main {
     border-radius: 20px 40px 50px 70px;
     box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.658);
 }
+main > h1{
+    background-image: linear-gradient(to right, blue 75vw, transparent 75vw);
+    
+    color: white;
+}
+
 main > p {
     font-size: 20px;
     text-indent: 5px;

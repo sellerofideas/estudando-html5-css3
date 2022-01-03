@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../Imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../../css/style1.css/estilo.css">
     <title>ImagensL</title>
 </head>
@@ -19,7 +19,63 @@
         <a href="../videos/exercicio-video.html">Videos</a>
     </nav>
     <main>
-        <h1>Imagens em HTML para diversos formatos</h1>
+        <h1>Trabalhando com imagens em HTML</h1>
+        <p>Para incerir imagens em um site é preciso usar a tag &lt;img&gt;.</p>
+
+            <h2>Inserindo imagens</h2>
+                <h3>imagem da mesma pasta:</h3>
+            <ul>
+                <li><dt><strong>&lt;img src="p.png" alt="Descriçção"&gt;</strong></dt></li>
+                <p>
+                    <dd>Digite "img" no VSCode + enter. Em "scr" localize a imagem na mesma pasta usando as teclas "Ctrl + espaço", em "alt" adicione uma breve descrição sobre a imagem, essa descrição ajuda deficientes visuais a "verem" sua pagina. Além disso os mecanismos de busca conseguem mostrar a sua imagem nas pesquisar mais facilmente.</dd>
+                </p> 
+            </ul>
+            <p><strong>"Src"</strong> vem de "Source" que significa Origem".</p>
+
+                <h3>Inserindo imagens de outra pasta</h3>
+            <ul>
+                <li><dt><strong>&lt;img src="<mark style="color: red; background-color: transparent;">Imagens/m.png</mark>" alt="Descriçção"&gt;</strong></dt></li> 
+                <dd><p>Nesse caso a imagem está na pasta "imagens. Para acessar a pasta digite "<strong>../</strong>" se a imagem estiver na pasta anterior ou "<strong>../../</strong>" se estiver em duas pastas anteriores.</p></dd>
+            </ul>
+
+                <h3>Inserindo imagem externa (da internete)</h3>
+                <ul>
+                    <li><dt><strong>&lt;img src="<mark style="color: red; background-color: transparent;">https://png.pngtree.com/png-clipart/20190630/original/pngtree-html-file-document-icon-png-image_4174779.jpg</mark>" alt="Descriçção"&gt;</strong></dt></li>
+                    <dd><p>A unica diferença aqui é que você vai precisar de um link com a imagem disponível e colocar em "src". O problema com essa opção é que se a imagem for removida do local ou ficar privada, não poderá ser acessada e sua pagina perderá a imagem.</p></dd>
+                </ul>
+                <p></p>
+
+            <h2>Tipos e tamanhos de imagens</h2>
+            <p>Os formatos mais aceitos pelos navegadores são:
+            <ul>
+                <li><dt><strong>PNG</strong></dt></li>
+                <dd><p>PNG é um formato de dados utilizado para imagens, que surgiu em 1996 como substituto para o formato GIF, devido ao facto de este último incluir algoritmos patenteados. (fonte: <a href="https://pt.wikipedia.org/wiki/PNG">Wikipédia</a>).</p></dd>
+
+                <li><dt><Strong>JPG</Strong></dt></li>
+                <dd><p>JPG é um método comum usado para comprimir imagens fotográficas. O grau de redução pode ser ajustado, o que permite a você escolher o tamanho de armazenamento e seu nível de compromisso com a qualidade da imagem. Geralmente se obtém uma compressão pouco perceptível na perda de qualidade da imagem. (Fonte:<a href="https://pt.wikipedia.org/wiki/JPEG"> Wikipédia</a>).</p></dd>
+
+                <li><dt><strong>GIF</strong></dt></li>
+                <dd><p>Graphics Interchange Format ou GIF é um formato de imagem de bitmap que foi desenvolvido por uma equipe do provedor de serviços on-line CompuServe, liderado pelo cientista de computação americano Steve Wilhite em 15 de junho de 1987. (fonte: <a href="https://pt.wikipedia.org/wiki/GIF">Wikipédia</a>).</p></dd>
+            </ul>
+        </p>
+        <h1>Como encontrar imagens?</h1>
+        <p>Esses são alguns sites onde podemos encontrar imagens, algumas gratuitas e com autorização de uso: <br>
+            <ul>
+                <li><a href="https://unsplash.com/">UnSplash</a> <br></li>
+                <li><a href="https://www.pexels.com/pt-br/">Pexels</a><br></li>
+                <li><a href="https://www.freepik.es/">FreePik</a><br></li>
+                <li><a href="https://www.rawpixel.com/">Rawpixel</a><br></li>
+                <li><a href="https://pixabay.com/pt/">Pixabay</a><br></li>
+                <li><a href="https://libreshot.com/">Libreshot</a><br></li>
+                <li><a href="https://commons.wikimedia.org/wiki/Commons:Featured_pictures?uselang=pt-br">Wikimedia Commons</a><br></li>
+            </ul>
+            <p><mark>É sem pre importante ler bem as regras de cada site e ter certeza de que são mesmo gratuitas ou com direito de uso livre!.</mark></p>
+        </p>
+        
+        <p>Outra coisa! Verifique o tipo e o tamaho das imagens que vai precisar e gere exatamente o que precisa, imagens muito grandes e pesadas tornam o site difícil de carregar e os buscadores acabam deixando eles de lado. <br>
+        <mark>Alinhe seu site de acordo com as exigências dos maiores buscadores, isso te fará ganhar competitividade em relação a outros desenvolvedores.</mark></p>
+
+        <h1>Site com imagens responsivas</h1>
         <p>O objetivo desse exercício é abrir o site me diversos formatos.</p>
         <p>Para isso é preciso usar a tag "picture" e dentro dela usar a tag "&lt;source media="(min-width: )" srcset="" type="image/"&gt; e organizadas do menor para o maior.</p>
         <picture>
@@ -27,6 +83,33 @@
             <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
             <img src="imagens/g.png" alt="Imagem flexivel">
         </picture>
+        
+        <h1>Icones/ Fivecons</h1>
+        <p>Para adicionar im favicon em sua pagina existem 3 opções:</p>
+
+        <h2>Icone na pasta local</h2>
+        <strong>&lt;link rel="shortcut icon" href="<mark style="background-color: transparent; color: red;">favicon.ico</mark>" type="image/x-icon"></strong>
+        <p>Salve o fivecom em uma pasta e dentro da tag &lt;head&gt; digite "<strong>link</strong>", escolha a opção "<strong>link:favicon</strong>", depos, em "href" digite "Ctrl + espaço" e localize o icone desejado. Se ele estiver em alguma pasta anterior digite "<strong>../</strong>" para acessá-la. </p>
+        
+        <h2>Baixando um icone pronto</h2>
+        <p>Se preferir poderá baixar um ícone do site <a href="https://iconarchive.com/">IconArchive.com</a> pronto para usá-lo em seus projetos. Lá você pode pesquisar por temas e usar posicionando conforme mencionado anteriormente.</p>
+
+        <h2>Criar um icone</h2>
+        <p>O mais recomendado é criar seu proprio icone, baixálo e posicionar em sua pagina. Para isso acesse <a href="https://www.favicon.cc/">favicon.cc</a> e crie o seu, do seu jeito.</p>
+
+        <h2>Trasforme um arquivo em icone</h2>
+        <p>Outra opção é transformar um arquipo PNG, um texto ou um emoji em icone usando o site <a href="https://favicon.io/">favicon.io</a>.</p>
+
+        <h2>Outros formatos de favicons</h2>
+        <p>O formato mais aceito por todos os navegadores é o ico, mas você pode usar outros como:</p>
+        <ul>
+            <li><strong>PNG</strong></li>
+            <li><strong>JPG</strong></li>
+            <li><strong><a href="https://pt.wikipedia.org/wiki/SVG">SVG</a></strong></li>
+        </ul>
+        
+
+
     </main>
     <footer>
         <p>Desenvolvido por <a href="">@sellerofideas</a></p>
