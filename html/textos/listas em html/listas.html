@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../Imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../../css/style1.css/estilo.css">
     <title>Listas em HTML</title>
 </head>
@@ -17,24 +17,62 @@
             <a href="../../../index.html">Home</a>
             <a href="../textos.html">Textos</a>
             <a href="../tipografia/fontes-em-css.html">Tipografia</a>
-            <a href="../paragrafos/paragrafos.html">Paragrafos</a>
             <a href="../formatacoes-comandos/formatacoes.html">Outras formatações</a>
         </nav>
     <main>
         <h1>Listas em HTML</h1>
-        <h2>Listas ordenadas</h2>
-        <p>Para criar uma lista eu inicio com a tag &lt;ol&gt;, para organizar a lista adiciono a tag "type="A".</p>
-        <ol type="A"> <!--A, a, I, i-->
-            <li>Tomar cafe
-            <li>Almoçar
-            <li>Jantar
-        </ol> <!--Orderd list-->
-        <h2>Lista não ordenadas</h2>
-        <ul type="square"> <!--Disc, circle e square-->
-            <li>Pão</li>
-            <li>Tomate</li>
-            <li>Alface</li>
-        </ul><!--Lista não organizada-->
+        <p>Temos em HTML 3 tipos de listas:</p>
+            
+            <h2>Listas ordenadas</h2>
+            <p>São usadas para criar uma lista com hierarquia. Para criar uma lista ordenada usamos a tag &lt;ol&gt;. Podemos também usar parâmetros para organizar a lista em <strong>ordem alfabética maúscula</strong>, por exemplo, nesse caso adicionamos o parâmetro <strong>type="A"</strong>.</p>
+                <ol type="A"> <!--A, a, I, i-->
+                    <li>Tomar cafe
+                    <li>Almoçar
+                    <li>Jantar
+                </ol> <!--Orderd list-->
+
+                <p>O parâmetro type="a"</p>
+                <ol type="a">
+                    <li>Tomar cafe
+                    <li>Almoçar
+                    <li>Jantar
+                </ol>
+
+                <p>O parâmetro type="I"</p>
+                <ol type="I">
+                    <li>Tomar cafe
+                    <li>Almoçar
+                    <li>Jantar
+                </ol>
+
+                <p>O parâmetro type="i"</p>
+                <ol type="i">
+                    <li>Tomar cafe
+                    <li>Almoçar
+                    <li>Jantar
+                </ol>
+        
+            <h2>Lista não ordenadas</h2>
+            <p>Listas não ordenadas são listas que não tem hierarquia. Nesse caso também podemos usar parâmetros como type="square" para mudar o demarcador  da lista.</p>
+            <ul type="square"> <!--Disc, circle e square-->
+                <li>Pão</li>
+                <li>Tomate</li>
+                <li>Alface</li>
+            </ul><!--Lista não organizada-->
+
+            <p>Type="disc".</p>
+            <ul type="disc">
+                <li>Pão</li>
+                <li>Tomate</li>
+                <li>Alface</li>
+            </ul>
+
+            <p>Type="circle".</p>
+            <ul type="circle">
+                <li>Pão</li>
+                <li>Tomate</li>
+                <li>Alface</li>
+            </ul>
         <h2>Lista de definição</h2>
         <p>Essa tipo de lista serve para criar definições como um dicionário.</p>
         <dl>
