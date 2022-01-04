@@ -14,9 +14,9 @@
         <h2 class="margin-top">Curso em vídeos</h2>
     </header>
     <nav>
-        <a href="../../../index.html">Home</a>          
-        <a href="../audios/exercicio-audio.html">Audios</a>
-        <a href="../videos/exercicio-video.html">Videos</a>
+        <a href="../../../index.html" target="_self" rel="next">Home</a>          
+        <a href="../audios/exercicio-audio.html" target="_self" rel="next">Audios</a>
+        <a href="../videos/exercicio-video.html" target="_self" rel="next">Videos</a>
     </nav>
     <main>
         <h1>Trabalhando com imagens em HTML</h1>
@@ -49,25 +49,25 @@
             <p>Os formatos mais aceitos pelos navegadores são:
             <ul>
                 <li><dt><strong>PNG</strong></dt></li>
-                <dd><p>PNG é um formato de dados utilizado para imagens, que surgiu em 1996 como substituto para o formato GIF, devido ao facto de este último incluir algoritmos patenteados. (fonte: <a href="https://pt.wikipedia.org/wiki/PNG">Wikipédia</a>).</p></dd>
+                <dd><p>PNG é um formato de dados utilizado para imagens, que surgiu em 1996 como substituto para o formato GIF, devido ao facto de este último incluir algoritmos patenteados. (fonte: <a href="https://pt.wikipedia.org/wiki/PNG" target="_blank" rel="external">Wikipédia</a>).</p></dd>
 
                 <li><dt><Strong>JPG</Strong></dt></li>
-                <dd><p>JPG é um método comum usado para comprimir imagens fotográficas. O grau de redução pode ser ajustado, o que permite a você escolher o tamanho de armazenamento e seu nível de compromisso com a qualidade da imagem. Geralmente se obtém uma compressão pouco perceptível na perda de qualidade da imagem. (Fonte:<a href="https://pt.wikipedia.org/wiki/JPEG"> Wikipédia</a>).</p></dd>
+                <dd><p>JPG é um método comum usado para comprimir imagens fotográficas. O grau de redução pode ser ajustado, o que permite a você escolher o tamanho de armazenamento e seu nível de compromisso com a qualidade da imagem. Geralmente se obtém uma compressão pouco perceptível na perda de qualidade da imagem. (Fonte:<a href="https://pt.wikipedia.org/wiki/JPEG" target="_blank" rel="external"> Wikipédia</a>).</p></dd>
 
                 <li><dt><strong>GIF</strong></dt></li>
-                <dd><p>Graphics Interchange Format ou GIF é um formato de imagem de bitmap que foi desenvolvido por uma equipe do provedor de serviços on-line CompuServe, liderado pelo cientista de computação americano Steve Wilhite em 15 de junho de 1987. (fonte: <a href="https://pt.wikipedia.org/wiki/GIF">Wikipédia</a>).</p></dd>
+                <dd><p>Graphics Interchange Format ou GIF é um formato de imagem de bitmap que foi desenvolvido por uma equipe do provedor de serviços on-line CompuServe, liderado pelo cientista de computação americano Steve Wilhite em 15 de junho de 1987. (fonte: <a href="https://pt.wikipedia.org/wiki/GIF" target="_blank" rel="external">Wikipédia</a>).</p></dd>
             </ul>
         </p>
         <h1>Como encontrar imagens?</h1>
         <p>Esses são alguns sites onde podemos encontrar imagens, algumas gratuitas e com autorização de uso: <br>
             <ul>
-                <li><a href="https://unsplash.com/">UnSplash</a> <br></li>
-                <li><a href="https://www.pexels.com/pt-br/">Pexels</a><br></li>
-                <li><a href="https://www.freepik.es/">FreePik</a><br></li>
-                <li><a href="https://www.rawpixel.com/">Rawpixel</a><br></li>
-                <li><a href="https://pixabay.com/pt/">Pixabay</a><br></li>
-                <li><a href="https://libreshot.com/">Libreshot</a><br></li>
-                <li><a href="https://commons.wikimedia.org/wiki/Commons:Featured_pictures?uselang=pt-br">Wikimedia Commons</a><br></li>
+                <li><a href="https://unsplash.com/" target="_blank" rel="external">UnSplash</a> <br></li>
+                <li><a href="https://www.pexels.com/pt-br/">Pexels</a><br></li target="external">
+                <li><a href="https://www.freepik.es/" target="_blank" rel="external">FreePik</a><br></li>
+                <li><a href="https://www.rawpixel.com/" target="_blank" rel="external">Rawpixel</a><br></li>
+                <li><a href="https://pixabay.com/pt/" target="_blank" rel="external">Pixabay</a><br></li>
+                <li><a href="https://libreshot.com/" target="_blank" rel="external">Libreshot</a><br></li>
+                <li><a href="https://commons.wikimedia.org/wiki/Commons:Featured_pictures?uselang=pt-br" target="_blank" rel="external">Wikimedia Commons</a><br></li>
             </ul>
             <p><mark>É sem pre importante ler bem as regras de cada site e ter certeza de que são mesmo gratuitas ou com direito de uso livre!.</mark></p>
         </p>
@@ -76,8 +76,23 @@
         <mark>Alinhe seu site de acordo com as exigências dos maiores buscadores, isso te fará ganhar competitividade em relação a outros desenvolvedores.</mark></p>
 
         <h1>Site com imagens responsivas</h1>
-        <p>O objetivo desse exercício é abrir o site me diversos formatos.</p>
-        <p>Para isso é preciso usar a tag "picture" e dentro dela usar a tag "&lt;source media="(min-width: )" srcset="" type="image/"&gt; e organizadas do menor para o maior.</p>
+        <p>Para tornar um site com imagens responsivas vamos usar as tags "picture", "source" e "img". <br>
+            A tag <strong>&lt;picture&gt;</strong> é um container usado para especificar múltiplos elementos, dentro desse container inserimos a tag <strong>&lt;source&gt;</strong> onde vamos configurar o tamanho da imagem com o atributo <strong>media="(max-width: 1050px)"</strong>,  indicar a imagem que será carregada pelo navegador usando <strong>srcset="imagem.png"</strong>, para quando atingir o tamanho máximo da width e <strong>type="imagem/png"</strong> indicando o tipo do arquivo que será carregado.  Veja mais sobre os <a href="../../links/links.html" target="_blank" rel="next">media types aqui.</a></p>
+            
+            <h2>Exercício imagem responsiva</h2>
+            <p>O objetivo desse exercício é abrir o site em diversos formatos, para isso a imagem precisa se adaptar a diferentes tamanhos.</p>
+        <p>Nesse caso vamos usar as tags com seus atributos e organizar as tags <strong>"source"</strong> do menor para o maior.</p>
+
+<pre class="pre">
+    <code>                
+        &lt;picture&gt;
+            &lt;source media="(max-width:750px )" srcset="imagens/p.png" type="image/png">
+            &lt;source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+            &lt;img src="imagens/g.png" alt="Imagem flexivel">
+        &lt;/picture>
+    </code>
+</pre>
+
         <picture>
             <source media="(max-width:750px )" srcset="imagens/p.png" type="image/png">
             <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
@@ -92,24 +107,24 @@
         <p>Salve o fivecom em uma pasta e dentro da tag &lt;head&gt; digite "<strong>link</strong>", escolha a opção "<strong>link:favicon</strong>", depos, em "href" digite "Ctrl + espaço" e localize o icone desejado. Se ele estiver em alguma pasta anterior digite "<strong>../</strong>" para acessá-la. </p>
         
         <h2>Baixando um icone pronto</h2>
-        <p>Se preferir poderá baixar um ícone do site <a href="https://iconarchive.com/">IconArchive.com</a> pronto para usá-lo em seus projetos. Lá você pode pesquisar por temas e usar posicionando conforme mencionado anteriormente.</p>
+        <p>Se preferir poderá baixar um ícone do site <a href="https://iconarchive.com/" target="_blank" rel="external">IconArchive.com</a> pronto para usá-lo em seus projetos. Lá você pode pesquisar por temas e usar posicionando conforme mencionado anteriormente.</p>
 
         <h2>Criar um icone</h2>
-        <p>O mais recomendado é criar seu proprio icone, baixálo e posicionar em sua pagina. Para isso acesse <a href="https://www.favicon.cc/">favicon.cc</a> e crie o seu, do seu jeito.</p>
+        <p>O mais recomendado é criar seu proprio icone, baixálo e posicionar em sua pagina. Para isso acesse <a href="https://www.favicon.cc/" target="_blank" rel="external">favicon.cc</a> e crie o seu, do seu jeito.</p>
 
         <h2>Trasforme um arquivo em icone</h2>
-        <p>Outra opção é transformar um arquipo PNG, um texto ou um emoji em icone usando o site <a href="https://favicon.io/">favicon.io</a>.</p>
+        <p>Outra opção é transformar um arquipo PNG, um texto ou um emoji em icone usando o site <a href="https://favicon.io/" target="_blank" rel="external">favicon.io</a>.</p>
 
         <h2>Outros formatos de favicons</h2>
         <p>O formato mais aceito por todos os navegadores é o ico, mas você pode usar outros como:</p>
         <ul>
             <li><strong>PNG</strong></li>
             <li><strong>JPG</strong></li>
-            <li><strong><a href="https://pt.wikipedia.org/wiki/SVG">SVG</a></strong></li>
+            <li><strong><a href="https://pt.wikipedia.org/wiki/SVG" target="_blank" rel="external">SVG</a></strong></li>
         </ul>
         
 
-
+        <p>Veja sobre <a href="https://www.youtube.com/watch?v=jWnMfvSdo1E" target="_blank" rel="external">otimização nos mecanismos de busca</a></p>
     </main>
     <footer>
         <p>Desenvolvido por <a href="">@sellerofideas</a></p>

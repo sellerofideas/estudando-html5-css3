@@ -76,6 +76,10 @@ main > p {
 .center {
     margin-left: 10px;
 }
+.pre {
+    font-size: 2.2vw;
+   
+}
 article {
     background-color: aquamarine;
     padding: 5px;
