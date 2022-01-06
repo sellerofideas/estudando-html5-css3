@@ -14,20 +14,68 @@
         <h2>Curso em vídeos</h2>
     </header>
     <nav>
-        <a href="../../index.html">Home</a>
-        <a href="../acessando-cores/cores-em-css.html" class="a">Cores</a>
-        <a href="../Identificadores-e-classes/identificadores-e-classes.html" >Identificadores e classes</a>       
+        <a href="../../index.html" target="_self" rel="next">Home</a>
+        <a href="../acessando-cores/cores-em-css.html" target="_self" rel="next">Cores</a>
+        <a href="../Identificadores-e-classes/identificadores-e-classes.html" target="_self" rel="next" >Identificadores e classes</a>       
     </nav>
     <main>
-        <h2>Usando CSS para dar estilo no conteúdo do site</h2>
-        <h3>CSS externo</h3>
-        <p>Essa técnica nos permite personalizar várias paginas de uma só vez, criando um padrão. <br>Basta criar um arquivo CSS usando a tag "link:CSS" dentro da "head", depois "Ctrl + clique no nome do arquivo". <br>No arquivo CSS é só adicionar as configurações desejadas e todas as paginas serão mudadas e padronizadas simultâniamente.</p>
-        <h3>CSS interno2</h3>
-        <p>Essa técnica permite mudar vários elementos dentro de uma pagina ao mesmo tempo. Ela serve para alterar elementos como titpulos, paragrafor entre outros elementos que se repetem na pagina sem a nescessidade de alterar 1 por 1. <br>Para usar essa técnica basta adicionar as configurações CSS desejadas dentro da "head", assim a pagina será alterada.</p>
-        <h2>Capitulo 2</h2>
-        <h3 style="color: blue;"> CSS inline</h3>
-        <p style="color: darkcyan;">A técnica INLINE é usada caso queira alterar somente um dedeterminado elemento da pagina. Para isso, basta adicionar o codigo CSS na tag da linha desejada. <br>Ex: &lt;p style="color: brown;">Técnica CSS inline&lt;/p&gt;</p>
-        <p><a href="estilo2.html">Pagina 2</a></p>
+        <h1>Usando CSS para dar estilo no conteúdo do site</h1>
+            <h2>CSS externo</h2>
+             <p>Usando essa técnica você consegue deixar todo o site em um só padão. <br>
+             Dentro da área da "<strong>head</strong>" onde são feitas as configurações da pagina digite "<strong>link</strong>" e escolha "<strong>link:css</strong>". Depois pressione "Ctrl" e clique no nome do arquivo css que foi criado para adicionar as configurações desejadas, assim todas as paginas que estiverem lincadas a esse arquivo css serão mudadas e padronizadas simultâniamente.</p>
+
+<pre class="pre">
+    <code>
+    &lt;!DOCTYPE html>
+    &lt;html lang="en">
+    &lt;head>
+        &lt;meta charset="UTF-8">
+        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+        &lt;link rel="shortcut icon" href="../../Imagens/favicon.ico" type="image/x-icon">
+        &lt;title>Estilos</title>
+        <mark style="color: red; background-color: transparent;"><strong>&lt;link rel="stylesheet" href="../../css/style1.css/estilo.css"></strong></mark>    
+    &lt;/head>
+    &lt;body>
+    </code>
+</pre>
+             
+             <h2>CSS interno2</h2>
+             <p>A técnica CSS interno permite mudar vários elementos que estão dentro de uma pagina ao mesmo tempo. Ela serve para alterar elementos como titpulos, paragrafor entre outros elementos que se repetem na pagina sem a nescessidade de alterar 1 por 1 e caso você queira uma mudança que não afete outras páginas. <br>
+            Para usar essa técnica basta adicionar as configurações CSS desejadas dentro da "head", assim a pagina será alterada.</p>
+
+<pre class="pre">
+    <code>
+    &lt;!DOCTYPE html>
+    &lt;html lang="en">
+    &lt;head>
+        &lt;meta charset="UTF-8">
+        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+        &lt;link rel="shortcut icon" href="../../Imagens/favicon.ico" type="image/x-icon">
+        <mark style="color: red; background-color: transparent;">
+            &lt;style>
+                h1{
+                    counter-reset: red;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+                h2{
+                    margin: 0px;
+                    padding: 5px;
+                }
+            &lt;/style>
+        </mark>
+        &lt;title>Estilos</title>    
+    &lt;/head>
+    &lt;body>
+    </code>
+</pre>
+        
+             <h2>CSS inline</h2>
+        
+                 <p>A técnica INLINE é usada caso queira <mark style="color: darkcyan; background-color: transparent;"><strong>alterar somente um dedeterminado elemento</strong></mark> da pagina deixando ele com a cor darkcyan, por exemplo. Para isso, basta adicionar o codigo CSS na tag da linha desejada. <br>
+                     
+                <p><mark style="color: darkcyan; background-color: transparent;">&lt;p style="color: brown;">Técnica CSS inline&lt;/p&gt;</mark></p>
     </main>
     <footer>
         <p>Desenvolvido por <a href="">@sellerofideas</a></p>

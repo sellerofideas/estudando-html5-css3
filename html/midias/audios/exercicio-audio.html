@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../Imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../../css/style1.css/estilo.css">
     <title>Trabalhando com audios</title>
 </head>
@@ -15,30 +15,53 @@
     </header>
     <nav>
         <a href="../../../index.html">Home</a>          
-    <a href="../videos/exercicio-video.html">Videos</a>
-    <a href="../imagens/exercicio-imagem.html">Imagens</a>
+    <a href="../videos/exercicio-video.html" target="_self" rel="next">Videos</a>
+    <a href="../imagens/exercicio-imagem.html" target="_self" rel="next">Imagens</a>
     </nav>
     <main>
         <h1>Trabalhando com audios.</h1>
         <p>Patra trabalharmos com audios usamos a tag <strong> &lt;audio></strong>.</p>
 
-        h2
+            <h2>Inserindo audio</h2>
+            <p>A tag audio tem importantes atributos como <strong>preload</strong> que indica que o audio será pre-carregado ou não, este atributo possui 3 valores:</p>
+            <ul>
+                <li><strong>metadate</strong>, carrega apenas as informações sobre tamanho, tempo =, direitos autorais, etc., do arquivo.</li>
+                <li><strong>none</strong>, não carrega nada até que o play seja ativado.</li>
+                <li><strong>auto</strong>, carrega o audio assim que a pagina é carregada, caso nehuma dessas alternatvas esteja ativa, ele está ativo por padão.</li>
+            </ul>
+            <p><strong>Consols</strong> é o atributo que mostra os controles do player, caso não esteja ativo o audio não será controlado pois os controles não estarão visíveis.</p>
+            
+            <p>O atributo <strong>autoplay</strong> reproduz o audio aassim que a pagina é carregada.</p>
+
+            <p><strong>Loop</strong> reproduz o audio infinitamente quando o tempo termina.</p>
+
+            <p>No código, coloque o audio que deseja executar primeiro, depois coloque outras versões para o caso de o navegador não ser compatível, por fim, você também pode adicionar um parágrafo disponibilizando o audio para download caso nenhuma das alternativas funcione.</p>
+<pre class="pre">
+    <code>
+        &lt;audio>
+            &lt;source src="minia/audio.mp3" type="audio/mpeg">
+            &lt;source src="minia/audio.ogg" type="audio/ogg">
+            &lt;source src="midia/audio.wav" type="image/wav">
+            &lt;p>Seu navegador não suporta audio &lt;a href="midia/audio.mp3"
+             douwnload="audio.mp3" type="audio/mpeg">&lr;/a>&lt;/p>
+        &lt;/audio>
+    </code>
+</pre>
             <p>Assim como as imagens, os audios precisam de versões em outros formatos par oferecermos uma melhor experiência aos usuarios. Nem todos os navegadores aceitam todos os formatos.</p>
             
-            <h2>Os formatos de audios</h2>
+            <h2>Formatos de audios</h2>
 
             <p>Os formatos de audios mais usados são:</p>
        
             <ol>
                 <ul>
-                    <li>.<strong>MP3</strong></li>
-                    <li>.<strong>OGG</strong></li>
-                    <li>.<strong>WAV</strong></li>
+                    <li>.<strong><a href="https://pt.wikipedia.org/wiki/MP3" target="_blank" rel="external">MP3</a></strong></li>
+                    <li>.<strong><a href="https://pt.wikipedia.org/wiki/Ogg" target="_blank" rel="external">OGG</a></strong></li>
+                    <li>.<strong><a href="https://pt.wikipedia.org/wiki/WAV" target="_blank" rel="external">WAV</a></strong></li>
                 </ul>
             </ol>
         </ol>
-        <p>É recomendado também, caso nenhuma das auternativas funcionem, colocar a função para o usuario baixar o arquivo usando a tag &lt;a href="local-do-arquivo" type="audio/mpeg">Clique aqui para baixar a música.&lt;/a&gt;</p>
-        <a href="audios/Bay-Street-Billionaires-SquaddaB.mp3" type="audio/mpeg">Clique aqui para baixar a música.</a>
+        
     </main>
     <footer>
         <p>Desenvolvido por <a href="">@sellerofideas</a></p>
