@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon">    
+    <link rel="shortcut icon" href="../../../Imagens/favicon.ico" type="image/x-icon">    
     <link rel="stylesheet" href="../../style1.css/estilo.css">
     <title>Gradientes em CSS</title>
     <style>
@@ -32,23 +32,41 @@
         <h2 class="h2">Curso em vídeos</h2>
     </header>
     <nav>
-        <a href="../../../index.html">Home</a>
-        <a href="../cores-em-css.html">Cores</a>
-            <a href="../harmonia-de-cores/harmonia-de-cores.html">Harmonia das cores</a>
-            <a href="../../estilos/estilo.html">Estilo</a>
-            <a href="../../Identificadores-e-classes/identificadores-e-classes.html" >Identificadores e classes</a>         
+        <a href="../../../index.html" target="_self" rel="prev">Home</a>
+        <a href="../cores-em-css.html" target="_self" rel="next">Cores</a>
+            <a href="../harmonia-de-cores/harmonia-de-cores.html" target="_self" rel="next">Harmonia das cores</a>
+            <a href="../../estilos/estilo.html" target="_self" rel="next">Estilo</a>
+            <a href="../../Identificadores-e-classes/identificadores-e-classes.html"  target="_self" rel="next">Identificadores e classes</a>         
     </nav> 
     <main>
         <h1>Testando gradientes</h1>
         <ul>
-            <li><p>Para trabalhar com as cores de fundo podemos usar a técnica de CSS estilo local (Interno na própria página) usando a área da tag "head", ou criar um padrão usando a técnica de <a href="../estilos/estilo.html" target="_blank" rel="noopener noreferrer">CSS externa</a></p></li>
+            <li><p>Para trabalhar com as cores de fundo podemos usar a técnica de CSS estilo local (Interno na própria página) usando a área da tag "head", ou criar um padrão usando a técnica de <a href="../../estilos/estilo.html" target="_blank" rel="noopener noreferrer">CSS externa</a></p></li>
         </ul>
         <h2>Configurações.</h2>
-        <ul>
-            <li>Para configurar basta selecionar o tipo de configurações desejadas usando as sugestões que aparecem ao digitar o comando.</li>
-        
-        </ul>
-    </main>
+        <p>Para configurar usando CSS local, na area da <strong>head</strong> use a tag <strong>&lt;style&gt;</strong>.
+<pre class="pre">
+    <code>
+        <li>&lt;style>
+            body {
+                    background-image: radial-gradient(circle,
+                     rgb(253, 253, 253), blue 70%);
+                    background-attachment:
+            }
+        &lt;/style></li>
+    </code>
+</pre>
+        </p>
+
+        <p>Para aplicar usando CSS externa, crie o link "<strong>link:css</strong>" na área da "<strong>head</strong>" e configure como quiser. <a href="../../estilos/estilo.html" target="_blank" rel="next">saiba mais sobre links de CSS externo aqui.</a></p>
+
+        <p>Você também poderá usar outros tipos de degradês como linear, de um canto ao outro, radial, etc. e também acrescentar porcentagem ás cores que escolher, se quiser mais da cor azul e menos a cor verde coloque blue 60%, green 40%.</p>
+
+        <strong style="background-image: linear-gradient(to right, yellow 60%, green 40%);"><strong></strong>
+            &lt;p style="background-image: linear-gradient(to right, yellow 60%, green 40%);">&lt;/p>
+        </strong>
+
+        </main>
     <footer>
         <p>Desenvolvido por <a href="">@sellerofideas</a></p>
     </footer>

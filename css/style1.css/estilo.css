@@ -70,6 +70,30 @@ main > p {
     font-size: 20px;
     text-indent: 5px;
 }
+table{
+    width: 400px;
+    border-collapse: collapse;
+    font-size: 2.5vw;
+
+}
+tr.linha {
+    background-color: gray;
+
+}
+td {
+    border: 1px solid black;
+    padding:  8px;
+}
+td.dado {
+    background-color: yellow;
+}
+.titulo-tabela{
+    background-color: blue;
+    color: white;
+}
+.par{
+    background-color: aqua;
+}
 .bold {
     font-weight: bolder;
 }
