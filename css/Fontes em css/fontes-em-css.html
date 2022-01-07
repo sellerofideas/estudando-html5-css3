@@ -53,15 +53,18 @@
             </ul>
         </p>
             <h2>Tamanho das fontes</h2>
-            <p>Para configurar o tamaho das fontes em CSS é usada a tag "font-size:". Existem dois tipos de tamanhos de fontes:
+            <p>Para configurar o tamaho das fontes em CSS é usado parametro "font-size:". 
+                
+                <p>Existem dois tipos de tamanhos de fontes:</p>
             <ol>
-                <li><h3>Medodas Absolutas</h3></li> Cm (centímetro), mm (milímetro), in (polegada), px (pixel), pt (ponto), pc (paica).
+                <li><h3>Medidas Absolutas</h3></li> Cm (centímetro), mm (milímetro), in (polegada), px (pixel), pt (ponto), pc (paica).
             
                 <li><h3>Medidas Relativas.</h3></li> "Em" (Medida relativa ao tamanho da letra M maiúsculo da fonte), "ex" (Relativa ao tamanho da letra x da fonte), "rem" (Relativa a fonte configurada no body), "vw" (Relativa ao percentual da largura largura da View Port ou tamanho da tela),  "vh" (relativo ao percentual da altura da view port), % (Porcentagem relativa).
                 <p>Os mais utilizados para o tamanho da fonte são o "em" e o "px". <br> Normalmente 16px é o mesmo tamanho que 1em.
                 É sempre recomendado usar em para se adequar melhor ao tamanho das telas desde um relógio até uma TV.</p>
             </ol>
             </p>
+            <p>Confira sobre a medida suportada das fontes no <a href="https://www.w3.org/Style/Examples/007/units.pt_BR.html" target="_blank" rel="next">site da M3C</a> aqui.</p>
         <h2>Peso das fontes.</h2>
         <p>Para configurar o peso usamos o comando "font-weight:". Os tipos de pesos são:</p>
         <ul>
@@ -83,7 +86,30 @@
                 <li>font: itálic bolder 3em 'work sans', sans-serif</li>
             </ul>
         </p>
-        
+        <h2>Shorthands</h2>
+        <p>Podemos simplificar o uso das fontes em CSS usando as "shorthands" que são formas abreviadas de escrever um código.</p>
+
+        <p>O jeito normal de configurar uma fonte é:</p>
+<pre class="pre">
+<code>
+    p{
+        font-family: Arial, Helvética, sans-serif;
+        font-size: 1em;
+        font-style: italic;
+        font-weigth: bold;
+    }
+</code>
+</pre>
+
+        <p>Com o uso de shorthand:</p>
+<pre>
+<code>
+    p{
+        font: italic bold 1em Arial, Helvetica, sans-serif;
+    }
+</code>
+</pre>
+
         <h2>Capturando fontes usadas em um site</h2>
         <p>Para capturar detalhes de fontes usadas nos sites você precisa instalar uma extenção do fontes ninja do <a href="https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh?hl=pt-BR" target="_blank" rel="noopener noreferrer">Chrome app store.</a> </p>
         <h2>Formas de implementar fontes:</h2>
@@ -105,10 +131,7 @@
         </ul>
         <p>Para configurar a fonte nesse caso utilize no campo da head a tag "style" e a regra "@font-face" depois é só configurar a "font-famyli:" com o nome da fonte. </p>
         
-        
-        <hr>
-        Para verificar as possibilidades de fontes para CSS.
-        <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank" rel="externals">CSS Web Safe Combinations.</a></p>
+        <p>Para saber as "sequencias seguras de fonts" abra o site <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank" rel="externals">CSS Web Safe Combinations.</a></p>
         <p>Para identificar fontes dentro de imagens:
             <ul>
                 <li><a href="https://www.whatfontis.com/" target="_blank" rel="noopener noreferrer">What fontis.</a></li>
