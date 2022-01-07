@@ -22,6 +22,36 @@
     </nav> 
     <main>
         <h1>Fontes em CSS</h1>
+
+        <h2>Trabalhando com fontes em Css</h2>
+        <p>Para trabalhar com as fontes existem 2 formas mais usadas:
+            <ul>
+                <li><strong>Usando o estilo de CSS interno</strong></li>
+                <p>Nesse caso usamos a tag style dentro da head na propria página. o código fica assim:
+<pre class="pre">
+<code>
+&lt;style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+    }
+    h1{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 50px;
+    }
+    p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+&lt;/style>
+</code>
+</pre>
+                </p>
+
+                <li><strong>Usando o estilo CSS externo</strong></li>
+                <p>Nesse caso as configurações serão feitas em uma folha de CSS externa. Confira nosso conteúdo sobre <a href="../estilos/estilo.html" target="_blank" rel="next">estilos de CSS aqui</a>.</p>
+            </ul>
+        </p>
             <h2>Tamanho das fontes</h2>
             <p>Para configurar o tamaho das fontes em CSS é usada a tag "font-size:". Existem dois tipos de tamanhos de fontes:
             <ol>
@@ -53,9 +83,7 @@
                 <li>font: itálic bolder 3em 'work sans', sans-serif</li>
             </ul>
         </p>
-        <h2>Topos de fontes.</h2>
-        <h2>Famílias de fontes.</h2>
-        <h2>Categoria das fontes.</h2>
+        
         <h2>Capturando fontes usadas em um site</h2>
         <p>Para capturar detalhes de fontes usadas nos sites você precisa instalar uma extenção do fontes ninja do <a href="https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh?hl=pt-BR" target="_blank" rel="noopener noreferrer">Chrome app store.</a> </p>
         <h2>Formas de implementar fontes:</h2>
