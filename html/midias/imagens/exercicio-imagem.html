@@ -99,6 +99,35 @@
             <img src="imagens/g.png" alt="Imagem flexivel">
         </picture>
         
+        <h1>Site com imagem de fundo</h1>
+        <p>Para adicionarmos uma imagem no fundo do site precisamos usar adicionar na tag style ou a folha de CSS o atributo <strong>background-image</strong>.</p>
+        <pre class="pre">
+            <code>
+&lt;style>
+    body{
+        background-image: url('Imagens/g.png');
+    }
+&lt;/style>
+            </code>
+        </pre>
+        <p>Dessa mesma forma podemos usar url externa, basta adicionar a url desejada.</p>
+        <h2>Personalizando o background</h2>
+        <p>Para personalizarmos o fundo, caso a imagem seja pequena, utilizamos o atributo <strong>background-repeat:</strong> com os valores <strong>repeat</strong>, quando queremos criar um fundo quadriculado onde a imagem se repete, <strong>no-repeat</strong>, se não queremos que se repita, <strong>repeat-x</strong> para repetir na horizontal e <strong>repeat-y</strong> para repetir a imagem na vertical.</p>
+
+        <p>Por padão, a posição de referencia é left-top (esquerda acima) que indica que é a partir desse ponto que a imagem começará a ser repetida, mas podemos mudar essa referencia para center-top (centro acima), right-top (direita acima), <strong>left-center</strong> (esquerda ao centro), <strong>center-center</strong>(centro), right-center (direita ao centro), <strong>left-bottom</strong> (esquerda abaixo), <strong>center-bottom</strong> (centro abaixo) e <strong>right-bottom</strong>(direita abaixo).</p>
+
+        <h2>Redimencionar</h2>
+        <p>Para redimencionar a imagem utilizamos a propriedade <strong>background-size</strong> com os valores <strong>auto</strong> para que a imagem seja aplicada ao cento e em seu tamanho original, <strong>length</strong> (px ou %) para redimencionar a largura da imagem de forma personalizada, <strong>cover</strong> para fazer com que seja exibida totalmente sem cortes ou <strong>contain</strong> para redimencionar dendro do container mesmo que precise cortar a imagem para poder caber.</p>
+
+        <h2>Vinculo/ attachment</h2>
+        <p>Com a propriedade <strong>attachment</strong> podemos fixar a imagem de fundo com <strong>fixed</strong> ou deixar rolando junto com o conteúdo utilizando o valor <strong>scroll.</strong></p>
+
+        <h2>Sorthand para o background</h2>
+        <p>Também podemos usar a forma encurtada para configurar o background adicionando na ordem a <strong>cor</strong>, a <strong>imagem</strong>, a <strong>posição</strong>, a <strong>repetição</strong> e o <strong>vinculo/attachment</strong>:</p>
+        <ul>
+            <li><strong>background: black url('Imagens/g.png') center center no repeat fixed;</strong></li>
+        </ul>
+
         <h1>Icones/ Fivecons</h1>
         <p>Para adicionar im favicon em sua pagina existem 3 opções:</p>
 
