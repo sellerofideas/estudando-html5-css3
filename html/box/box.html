@@ -20,30 +20,50 @@
         <a href="../../html/links/links.html">Links</a>      
         <a href="../../html/tabela/tabelas.html">Tabelas</a>   
     </nav>
-    <main>   
-        <h2>Box inline e box em bloco</h2>
-        <p>Partindo do princípio de que todo conteúdo em CSS é representado por caixas temos dois tipos de caixas.</p>
-            <h3>Box inline</h3>
-            <p>O box inline é usado quando queremos trabalhar com uma caixa dentro do conteúdo. Sua caracteristica é ocupar somente o espaço que lhe cabe sem precisar quebrar ou pular linha.</p>
-            <p>Exemplo de <a href="texte-de-borda.html">box inline</a>.</p>
-    
-            <h3>Box em bloco</h3>
-            <p>O box em bloco, por outro lado, já ocupa uma linha inteira pulando uma linha.</p>
-                <h4>Exemplo de box em bloco</h4>
-                    <p>Na tag "Style" dentro da head ou na folha de CSS podemos alterar as caixas dos conteúdos.</p>
-            <p>Uma dica é usar o Dev tools do navegador para alterar a pagina e mostrar em tempo real para o cliente como as mudanças ficam no site, caso o cliente goste do resultado é só implementar no código original.</p>
-    
-        <h2>Propriedades das caixas</h2>
-        <ul>
-            <li><dt>Caixa de texto</dt></li>
-                <p><dd>É o lugar onde o texto é mostrado.</dd></p>
-            <li><dt>panding</dt></li>
-                <p><dd>É a área entre o texto e a borda</dd> (border).</p>
-            <li><dt>Border</dt></li>
-                <p><dd>É a ária da borda da caixa.</dd></p>
-            <li><dt>Margin</dt></li>
-                <p><dd>A margem é a parte exterior a borda.</dd></p>
-        </ul>
+<main>
+
+    <h1>Entendendo as boxes</h1>
+    <p>Todo conteúdo é criado em forma de em caixas, encergar a pagina de acordo com essa perpectiva ajuda e muito na hora de criar. Cada caixa por padrão é criada apenas com o conteúdo, a única exceção é o body que é criado com uma margin de 8px. Podemos acrescentar em cada elemento, valores para a margin, padding, border e outline.</p>
+    <h2>Propriedades das caixas</h2>
+    <ul>
+        <li><dt><strong>Conteúdo</strong></dt></li>
+            <p><dd>Todo conteúdo (content) possui um tamaho de caixa chamado box size composto de altura (height) e largura (width).</dd></p>
+
+            <li><dt><strong>Panding</strong></dt></li>
+            <p><dd>Fora da área de conteúdo temos a área de preenchimento (padding). O padding de fica da borda para dentro (border).</dd></p> 
+
+            <li><dt><strong>Border</strong></dt></li>
+            <p><dd>É a ária da borda do conteúdo. Cada borda pode ser configurada com uma cor, espessura e formato.</dd></p>
+
+            <li><dt><strong>Outline</strong></dt></li>
+            <p><dd>O espaço entre a margem e a borda onde podemos determinar o contorno (outline) é muito pouco utilizado. Ele é um traçado visual que podemos criar fora da borda e o cálculo da sua espessura faz parte da margem estabelecida.</dd></p>
+                   
+        <li><dt><strong>Margin</strong></dt></li>
+            <p><dd>A margem é a parte exterior que fica depois da borda.</dd></p>
+    </ul> 
+    <p>A nova propriedade <strong>box-sizing</strong> define as dimensões height e width a partir da borda (border-box) e não apenas a partir do conteúdo  (content-box).</p>
+ 
+    <p>A medida total da height e width que essa caixa vai ocupar é feita pela soma de todas as medidas, margin, padding, border e content.</p> 
+
+    <h1>Box inline e box em bloco</h1>
+    <p>Partindo do princípio de que todo conteúdo em CSS é representado por caixas temos dois tipos de caixas.</p>
+
+    <p>O sorthand das medidas do border e do outline são:</p>
+    <ul>
+        <li><strong>border: tamanho <span style="color: gray;">tipo</span> <span style="color: red;">cor</span>;</strong></li>
+        <li><strong>outline: tamanho <span style="color: gray;">tipo</span> <span style="color: blue;">cor</span>;</strong></li>
+    </ul>
+    <p>A margin e o padding são configuradas com um valor para os quatro lados, dois valores para direita e esquerda, em cima e em baixo, e também um valor para cada lado em centido horário, cima, direita, baixo, esquerda.</p>
+        <h3>Box inline</h3>
+        <p>O box inline é usado quando queremos trabalhar com uma caixa dentro do conteúdo. Sua caracteristica é ocupar somente o espaço que lhe cabe sem precisar quebrar ou pular linha.</p>
+        <p>Exemplo de <a href="texte-de-borda.html">box inline</a>.</p>
+
+        <h3>Box em bloco</h3>
+        <p>O box em bloco, por outro lado, já ocupa uma linha inteira pulando uma linha.</p>
+            <h4>Exemplo de box em bloco</h4>
+                <p>Na tag "Style" dentro da head ou na folha de CSS podemos alterar as caixas dos conteúdos.</p>
+        <p>Uma dica é usar o Dev tools do navegador para alterar a pagina e mostrar em tempo real para o cliente como as mudanças ficam no site, caso o cliente goste do resultado é só implementar no código original.</p>
+
         <p>Para transformar um box inline em um box em bloco basta adicionar o comando "display:". Também podemos configurar o bloco como inline, mas com outros comandos para alterar o tamanho e formas adicionando o comando "display: inline-block".</p>
     </main>
     <footer>
