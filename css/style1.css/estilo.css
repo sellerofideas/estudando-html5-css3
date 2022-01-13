@@ -20,29 +20,68 @@ header > h1 {
     background-image: none;
     color: white;
 }
+
 #principal {
     padding: 1vw 10vw 1vw 10vw;
     text-align: center;
     
 }
-nav {
-    background-color: darkblue;
-    padding-left: 40px;
-    /*comando: desloc horizontal desloc vertical espalhamento cor;*/
-    box-shadow: 0px 1px 2px black;
-    /*inset cria sombra interna*/
+#check{
+    display: none;
 }
-#nav > a {
-    font-size: 20px;
+#icone{
+    top: 75px;
+    cursor: pointer;
+    padding: 2px;
+    position: absolute;
+    z-index: 1;        
+}
+.barra{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"]:checked ~ nav {
+    transform: translate(350px);
+}
+ul{
+    list-style: none;
+}
+nav{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 145px;
+    left: -390px;
+    transition: all .2s; 
+}
+nav a{
     text-decoration: none;
-    color: wheat;
+    display: block;
+    background-color: darkblue;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
     font-weight: bold;
-    padding: 5px;
-    border-radius: 5px; 
+    border-bottom: 2px solid black;
+    opacity: 95%;
+    color: white; 
 }
-nav > a:hover {
-    background-color: rgb(41, 41, 155);
-    color: white;
+a:hover{
+    background-color: aqua;
+    color: black;
+
+}
+label{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;   
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
