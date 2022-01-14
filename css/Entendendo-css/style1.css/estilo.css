@@ -3,18 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 *{
+    padding: 0px;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif
 }
 header {
     width: auto;
     background-image: linear-gradient(to bottom, blue, darkblue);
     color: white;
-    padding: 10px;
-    margin: auto;
 }
 header > h1 {
-    margin-bottom: -20px;
-    font-size: 7vw;
+    font-size: 8vw;
+    text-shadow: 3px 5px 4px black;
+}
+.subtitulo{
+    padding: 5px 0px 0px 0px;
+    font-size: 3.5vw;
+    
+    border-top: solid 1px aqua;
 }
 .h2 {
     background-image: none;
@@ -26,63 +32,7 @@ header > h1 {
     text-align: center;
     
 }
-#check{
-    display: none;
-}
-#icone{
-    top: 75px;
-    cursor: pointer;
-    padding: 2px;
-    position: absolute;
-    z-index: 1;        
-}
-.barra{
-    height: 100%;
-    width: 300%;
-    position: absolute;
-    transition: all .2s linear;
-    left: -300px;
 
-}
-input[type="checkbox"]{
-    display: none;
-}
-input[type="checkbox"]:checked ~ nav {
-    transform: translate(350px);
-}
-ul{
-    list-style: none;
-}
-nav{
-    height: 100%;
-    width: 50%;
-    position: absolute;
-    top: 145px;
-    left: -390px;
-    transition: all .2s; 
-}
-nav a{
-    text-decoration: none;
-    display: block;
-    background-color: darkblue;
-    padding: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    border-bottom: 2px solid black;
-    opacity: 95%;
-    color: white; 
-}
-a:hover{
-    background-color: aqua;
-    color: black;
-
-}
-label{
-    padding: 15px;
-    position: absolute;
-    z-index: 1;   
-}
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgba(0, 255, 255, 0.349); 
