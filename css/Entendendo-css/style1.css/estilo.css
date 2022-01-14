@@ -16,12 +16,53 @@ header > h1 {
     font-size: 8vw;
     text-shadow: 3px 5px 4px black;
 }
-.subtitulo{
-    padding: 5px 0px 0px 0px;
-    font-size: 3.5vw;
-    
-    border-top: solid 1px aqua;
+header > h2{
+    border-top: 1px solid white;
+    padding: 5px;
 }
+/**************************************************************************/
+
+input[type="checkbox"]{
+    display: none;
+}
+nav{
+    background-color: blue;
+    width: 350px;
+    height: 100%;
+    left: -350px;
+    position: absolute;
+    transition: all .5s;
+}
+input[type="checkbox"]:checked ~nav{
+    transform: translateX(350px);
+}
+nav ul{
+    background-color: blue;
+    list-style: none;
+    top: 50px;
+    position: absolute;
+    width: 100%;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 25px 5px;
+    color: white;
+
+}
+nav a:hover{
+    background-color: aqua;
+    color: black;    
+}
+label{
+    top: 22vw;
+    left: -1vw;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+/**************************************************************************/
 .h2 {
     background-image: none;
     color: white;
@@ -38,10 +79,11 @@ body {
     background-color: rgba(0, 255, 255, 0.349); 
     margin: 0px;           
 }
+/**************************************************************************/
 main {    
     font-family: 'Courier New', Courier, monospace;
     background-color: white;
-    padding: 1vw 10vw 5vw 10vw;
+    padding: 12vw 10vw 5vw 10vw;
     margin: 3vw 2vw 10vw 3vw;
     border-radius: 20px 40px 50px 70px;
     box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.658);
@@ -66,6 +108,7 @@ main > p {
     font-size: 20px;
     text-indent: 5px;
 }
+/**************************************************************************/
 table{
     width: 10vw;
     border-collapse: collapse;
@@ -147,6 +190,7 @@ aside {
     text-align: center;
     padding-top: 10px;
 }
+/**************************************************************************/
 footer {
     background-image: linear-gradient(to bottom, darkblue, black);
     color: white;
@@ -179,11 +223,3 @@ footer > div{
 footer a:hover{
     color: aqua;
 }
-/*
-div.bola {       
-    height: 25vw;
-    width: 25vw;
-    margin: 10px;
-    background-color: rgb(255, 255, 255);  
-    border-radius: 50%;  
-}*/
