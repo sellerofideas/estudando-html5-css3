@@ -5,36 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../../Imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../../css/style1.css/estilo.css">
+    <link rel="stylesheet" href="../../../../css/Entendendo-css/style1.css/estilo.css">
     <title>Listas em HTML</title>
 </head>
 <body>
-<header id="principal">
-        <h1>APRENDENDO HTML & CSS</h1>
-        <h2 class="margin-top">Curso em vídeos</h2>
+    <header id="principal">
+        <h1>APRENDENDO HTML 5 & CSS 3</h1>
+        <h2 class="subtitulo">Guia para estudantes</h2>
     </header>
-    <input type="checkbox" id="menu">    
-    <label id="icone" for="menu">
-        <img src="../../../Imagens/menu.png">
+    <input type="checkbox" id="chec">    
+    <label id="icone" for="chec">
+        <img src="../../../../Imagens/menu.png">
     </label>
     <nav>
         <ul>
-            <li><a href="../../../index.html">Home</a></li>
-            <li><a href="../../entendendo-html/estrutura.html">Entendendo HTML5</a></li>
-            <li><a href="../../box/box.html">Box </a></li>           
-            <li><a href="../../midias/imagens/exercicio-imagem.html">Midias</a></li>
-            <li><a href="../../links/links.html">Links</a></li>
-            <li><a href="html/textos/textos.html">Textos</a></li>
-            <li><a href="../../midias/imagens/exercicio-imagem.html">Fivecons</a></li>
-            <li><a href="../../tabela/tabelas.html">Tabelas</a></li>
-            <li><a href="../../textos/listas em html/listas.html">Listas</a></li>
-            <li><a href="../formatacoes-comandos/formatacoes.html">Formatações</a></li>
-            <li><a href="../tipografia/tipografia.html">Tipografia </a></li>
-            <li><a href="../../../css/Entendendo-css/estrutura-css.html">Endendendo CSS3</a></li>
-            <li><a href="../../../css/acessando-cores/cores-em-css.html" class="a">Cores</a></li>
-            <li><a href="../../../css/acessando-cores/gradientes/gradiente.html">Gradiente</a></li>
-            <li><a href="../../../css/estilos/estilo.html">Estilo</a></li>
-            <li><a href="../../../css/Identificadores-e-classes/identificadores-e-classes.html" >Indentificadores e classes</a></li>
+            <li><a href="../../../../index.html" target="_self" rel="next">Home</a></li>
+            <li><a href="../../estrutura.html" target="_self" rel="next">Entendendo HTML 5</a></li>
+            <ul class="submenu">
+                <li><a href="../tipografia.html" target="_self" rel="next">Tipografia </a></li>
+                    <ul class="submenu2">
+                        <li><a href="../textos/textos.html" target="_self" rel="next">Textos</a></li>
+                        <ul>
+                            <li><a href="../textos/formatacoes/formatacoes.html" target="_self" rel="next">Formatações</a></li> 
+                        </ul>
+                        <li><a href="listas.html" target="_self" rel="next">Listas</a></li>
+                    </ul>
+                <li><a href="../../box/box.html" target="_self" rel="next">Box </a></li>
+                <li><a href="../../tabela/">Tabelas</a></li target="_self" rel="next">
+                <li><a href="../../links/links.html" target="_self" rel="next">Links</a></li>
+                <li><a href="../../midias/imagens/exercicio-imagem.html" target="_self" rel="next">Midias</a></li>
+                    <ul class="submenu2">
+                        <li><a href="../../midias/imagens/exercicio-imagem.html" target="_self" rel="next">Imagens</a></li>
+                        <li><a href="../../midias/audios/exercicio-audio.html" target="_self" rel="next">Audios</a></li>
+                        <li><a href="../../midias/videos/exercicio-video.html" target="_self" rel="next">Videos</a></li>
+                    </ul>
+            </ul> 
+            <li><a href="../../../../css/Entendendo-css/estrutura-css.html" target="_self" rel="next">Entendendo CSS 3</a></li>
+            <ul class="submenu">
+                <li><a href="../../../../css/Entendendo-css/acessando-cores/cores-em-css.html" class="a" target="_self" rel="next">Cores</a></li>
+                    <ul class="submenu2">
+                        <li><a href="../../../../css/Entendendo-css/acessando-cores/harmonia-de-cores/harmonia-de-cores.html" target="_blank" rel="next">Harmonia das cores</a></li>
+                        <li><a href="../../../../css/Entendendo-css/acessando-cores/gradientes/gradiente.html" target="_self" rel="next">Gradiente</a></li>
+                    </ul>
+                <li><a href="../../../../css/Entendendo-css/estilos/estilo.html" target="_self" rel="next">Estilo</a></li>                 
+                <li><a href="../../../../css/Entendendo-css/Identificadores-e-classes/identificadores-e-classes.html" target="_self" rel="next" >IDs e classes</a></li>
+                <li><a href="../../../../css/Entendendo-css/Fontes em css/fontes-em-css.html em css/fontes-em-css.html em css/fontes-em-css.html em css/fontes-em-css.html" target="blank_" rel="next">Fontes em CSS</a></li>
+            </ul>
         </ul>
     </nav>
     <main>
