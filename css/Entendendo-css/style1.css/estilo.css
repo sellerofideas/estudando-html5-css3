@@ -86,9 +86,6 @@ main section{
     font-size: 20px;
     margin: 40px;
 }
-main h3{
-    
-}
 main > h1{
     background-image: linear-gradient(to right, blue 75vw, transparent 75vw);    
     color: white;
@@ -105,10 +102,27 @@ main a:hover {
       color: black;
 }
 main > p {
+    margin: 20px 0px 20px 0px;
     font-size: 20px;
-    text-indent: 5px;
+    text-align: justify;
+}
+main > ul, ol, dt{
+    padding: 10px;
+    margin: 5px 0px 5px 0px;
 }
 /**************************************************************************/
+article {
+    background-color: aquamarine;
+    padding: 50px;
+    margin: -10px -10vw -5vw -10vw;
+    border-radius: 0px 0px 50px 70px;
+}
+article > h3{
+    margin-bottom:20px;
+}
+article > p{
+    margin-bottom: 20px;
+}
 table{
     width: 10vw;
     border-collapse: collapse;
@@ -168,27 +182,6 @@ div.video > iframe {
     padding: 20px;
     text-align: center;
 
-}
-article {
-    background-color: aquamarine;
-    padding: 5px;
-    margin: -10px -10vw -5vw -10vw;
-    border-radius: 0px 0px 50px 70px;
-}
-#h3 {
-    margin: 7vw;
-}
-article > p {
-    margin: 7vw;
-}
-article > aside {
-    padding-bottom: 10px;
-    border-radius: 0px 0px 50px 70px;
-    background-color: rgb(255, 255, 255);
-}
-aside {
-    text-align: center;
-    padding-top: 10px;
 }
 /**************************************************************************/
 footer {
