@@ -93,7 +93,6 @@ main > h1{
 main a{
     color: black;
     box-shadow: 2px 2px 5px black;
-  
     text-decoration: none;
     border-radius: 5px; 
 }
